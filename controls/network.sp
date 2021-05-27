@@ -7,7 +7,7 @@ locals {
 benchmark "network" {
   title         = "Thrifty Networking Checks"
   description   = "Thrifty developers ensure delete unused network resources."
-  documentation = file("./controls/docs/network.md") #TODO
+  documentation = file("./controls/docs/network.md") 
   tags          = local.vpc_common_tags
   children = [
     control.unattached_eips

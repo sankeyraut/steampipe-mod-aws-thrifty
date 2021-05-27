@@ -7,7 +7,7 @@ locals {
 benchmark "s3" {
   title         = "Thrifty S3 Checks"
   description   = "Thrifty developers ensure their S3 buckets have managed life-cycles."
-  documentation = file("./controls/docs/s3.md") #TODO
+  documentation = file("./controls/docs/s3.md") 
   tags          = local.s3_common_tags
   children = [
     control.buckets_with_no_life_cycle

@@ -7,7 +7,7 @@ locals {
 benchmark "cloudtrail" {
   title         = "Thrifty CloudTrail Checks: One trail to rule them all."
   description   = "Thrifty developers know that multiple active CloudTrail Trails can add signifigant costs. Be thrifty and eliminate the extra trails."
-  documentation = file("./controls/docs/cloudtrail.md") #TODO
+  documentation = file("./controls/docs/cloudtrail.md") 
   tags          = local.cloudtrail_common_tags
   children = [
     control.multiple_global_trails,
